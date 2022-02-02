@@ -4,11 +4,10 @@ class Include {
     this.val2 = val2
   }
 
-  checkInclude() {
+  check () {
     if (this.val1 instanceof String || this.val1 instanceof Array) {
       return this.val1.includes(this.val2)
     }
-    return false
   }
 }
 
